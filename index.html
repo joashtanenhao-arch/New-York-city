@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })</script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })</script>
+
+    <title>History Modals</title>
+
+</head>
+
+<body data-spy="scroll" data-target="website-navbar"
+      data-offset="100">
+    <nav id="website-navbar" class="navbar navbar-expand-md
+                                    navbar-light bg-white sticky-top">
+        <a class="navbar-brand">
+            <img src="assets/new-york-icon-in-on-white-background-vector-29946181.avif">
+            New York Tourism
+        </a>
+        <div class="navbar-content">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#title-text">
+                    Top of page </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#main-picture">
+                        Landmarks </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#other-items">
+                        Nature and others</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                        data-toggle="dropdown">
+                        Culture and National Education</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#singlish"> Singlish Dictionary </a>
+                        <a class="dropdown-item" href="#national-anthem"> National Anthem</a>
+                        <a class="dropdown-item" href="#timeline-row">New York's History</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row m-3" id="title-text">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <br>
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col pt-5">
+                                <h1>Welcome to New York</h1>
+                                <p>A city in northeastern United States. </p>
+                            </div>
+                            <div class="col-3">
+                                <img src="assets/new-york-icon-in-on-white-background-vector-29946181.avif" height="200px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" id="main-picture">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="alert alert-info alert-dismissible fade show">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            This site was created by Joash.
+                        </div>
+
+                        <div id="landmarks-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/Statue_of_Liberty,_NY.jpg"height="500px"width="1200px">
+                                    <div class="carousel-caption">
+                                        <h1>The statue of liberty</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/Times-Square-a-New-York.jpeg"height="500px"width="1200px">
+                                    <div class="carousel-caption">
+                                        <h1>The times square</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/central-park-new-york-city-WHEREYOU0118-fb2c3b1bf36d40258ec2788145fa5581.jpg"height="500px"width="1200px">
+                                    <div class="carousel-caption">
+                                        <h1>Central park</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Control-->
+                            <a class="carousel-control-prev" href="#landmarks-carousel" data-slide="prev">
+                                <span class="fa fa-chevron-left"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#landmarks-carousel" data-slide="next">
+                                <span class="fa fa-chevron-right"></span>
+                            </a>
+
+                            <!-- Carousel Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#landmarks-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#landmarks-carousel" data-slide-to="1"></li>
+                                <li data-target="#landmarks-carousel" data-slide-to="2"></li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5" id="icons">
+            <div class="col-md-4 text-center">
+                <h4>Attractions</h4>
+                <img src="assets/attraction.png" alt="" style="width: 100px" class="m-3" ;>
+                <br>
+                <a href="https://www.tripadvisor.com.sg/Tourism-g60763-New_York_City_New_York-Vacations.html"
+                    class="btn btn-primary" style="width: 180px;">
+                    Visit Our Attractions</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Hotel</h4>
+                <img src="assets/hotel-building-icon-eps10-vector.webp" alt="" style="width: 100px" class="m-3" ;>
+                <br>
+                <a href="https://www.trivago.sg/en-SG/lm/hotels-new-york-new-york-state?search=200-14734;dr-20261019-20261020"
+                    class="btn btn-primary" style="width: 120px;">
+                    Book a Hotel</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Food</h4>
+                <img src="assets/pngtree-food-icon-design-vector-png-image_3645463.png" alt="" style="width: 100px" class="m-3" ;>
+                <br>
+                <a href="https://www.chefdenise.com/all/famous-new-york-foods" class="btn btn-primary"
+                    style="width: 165px;">
+                    Explore Local Food</a>
+            </div>
+        </div>
+
+
+
+        <div class="row p-5" id="other-items">
+            <div class="col-md-6 text-center p-4" style="background-color:bisque">
+                <h2>Visit Central Park</h2>
+                <img src="./assets/88.jpg" alt="" style="width: 100%" class="p-3">
+                <a href="https://www.nationalgeographic.com/travel/article/everything-to-know-about-central-park">
+                    <p>Find out more</p>
+                </a>
+            </div>
+            <div class="col-md-6 text-center p-4" style="background-color:bisque">
+                <h2>Explore New York</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934358.4950784092!2d-71.83545751905153!3d40.69305657464418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2ssg!4v1789783934542!5m2!1sen!2ssg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+        <div class="row py-3" id="nature">
+            <div class="col-md-12 nature-gallery">
+                <h2 class="nature-gallery-title">Nature Gallery</h2>
+                <div class="card-deck">
+                    <div class="card bg-danger">
+                        <img class="card-img-top" src="assets/redrosebeautystateflowerNY.jpg"height="300px">
+                        <div class="card-body">
+                            <h4 class="card-title">Rose</h4>
+                            <p class="card-text">This is New York's national flower</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-info">
+                        <img class="card-img-top" src="assets/OIP.webp"height="300px">
+                        <div class="card-body">
+                            <h4 class="card-title">Pine Pinion Moth</h4>
+                            <p class="card-text">They are critacilly endangered!</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success">
+                        <img class="card-img-top" src="./assets/Crotona-Park-American-Elm.webp"height="300px">
+                        <div class="card-body">
+                            <h4 class="card-title">American Elm</h4>
+                            <p class="card-text">A unique species of tree.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-3" id="singlish">
+            <div class="col-md-12">
+                <h1><span class="badge badge-info">New york slang Dictonary</span></h1>
+                <table class="table table-borderless">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>No.</th>
+                            <th class="w-50">New york slang</th>
+                            <th>Language of Origin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                    data-content="Seriously; for real; used to emphasize truthfulness"
+                                    data-placement="right" title="Deadass" data-trigger="hover">
+                                    Deadass
+                                </a>
+                            </td>
+                            <td>Lexistry</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                    data-content="Extremely cold; freezing weather." data-placement="right" title="Brick"
+                                    data-trigger="hover">
+                                    Brick
+                                </a>
+                            </td>
+                            <td>Lexistry</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                    data-content="A small convenience store or corner store, typically Latino-owned." data-placement="right"
+                                    title="Bodega" data-trigger="hover">
+                                    Bodega
+                                </a>
+                            </td>
+                            <td>Lexistry</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                    data-content="To carry or drag something heavy; to travel laboriously."
+                                    data-placement="right" title="Schlep" data-trigger="hover">
+                                    Schlep
+                                </a>
+                            </td>
+                            <td>Lexistry</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="row pb-3" id="national-anthem">
+            <div class="col-md-12 text-center mb-3 py-1" style="border:1px solid">
+                <h1><a href="#" data-toggle="tooltip" data-placement="top" title="<h4><em>I love new York</em></h4>"
+                        data-html="true"></data-html>National Anthem</a> of New York</h1>
+            </div>
+
+            <div class="col-md-7 text-center">
+                <div id="anthem-accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link btn-lg" data-toggle="collapse"
+                                    data-target="#english-anthem-body">
+                                    Click here for National Anthem in English
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="english-anthem-body" class="card-body collapse" data-parent="#anthem-accordion">
+                            <p>There isn't another like it.
+                            No matter where you go.
+                            And nobody can compare it.
+                            It's win and place and show.
+                            New York is special.
+                            New York is diff'rent
+                            'Cause there's no place else on earth 
+                            Quite like New York 
+                            And that's why
+ 
+                            I LOVE NEW YORK
+                            I LOVE NEW YORK
+                            I LOVE NEW YORK
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link btn-lg" data-toggle="collapse"
+                                    data-target="#chinese-anthem-body">
+                                    Click here for National Anthem in Chinese
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="chinese-anthem-body" class="card-body collapse" data-parent="#anthem-accordion">
+                            <p>纽约的灯火照亮夜空
+                                梦想在这城市奔涌
+                                带着勇气踏上这条路
+                                我要让世界记住
+
+                                这里有机会，也有挑战
+                                每一步都靠自己实现
+                                无论起点究竟在哪里
+                                纽约就是新的天地
+
+                                纽约，纽约！
+                                让梦想在这里闪耀
+                                纽约，纽约！
+                                我要站上更高的舞台
+                                不怕风雨，不怕失败
+                                只要敢闯，就能精彩
+                                纽约，纽约！
+                                这是属于我的时代</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-5 text-center">
+                <button type="button" class="btn btn-danger btn-lg malay-anthem-btn" data-toggle="collapse"
+                    data-target="#malay-anthem-body">
+                    National Anthem (Malay)
+                </button>
+                <div id="malay-anthem-body" class="collapse">
+                    <p>Ayuh sebarkan berita
+                    Aku tiba di kota
+                    Kota penuh cahaya
+                    Tempat impian bermula
+
+                    Di sini ku berdiri
+                    Dengan harapan di hati
+                    Apa jua yang menanti
+                    Akan ku tempuhi
+
+                    New York,New York!
+                    Kota impian yang gemilang
+                    New York, New York!
+                    Tempat ku bina masa depan
+                    Di jalan yang penuh warna
+                    Ku kejar cita-cita
+                    Walau tinggi cabarannya
+                    Ku takkan mengalah 
+
+                    Hari ini ku melangkah
+                    Dengan semangat membara
+                    Selagi impian menyala
+                    Ku terus mencuba
+
+                    New York, New York!
+                    Kota impian yang gemilang
+                    New York, New York!
+                    Tempat ku bina masa depan
+
+                    Ku mahu berjaya di sini
+                    Ku mahu dikenali
+                    Dengan usaha dan berani
+                    Ku capai impian ini
+
+                    New York, New York!
+                    Lampu kota terus bersinar
+                    New York, New York!
+                    Inilah masa untuk bersinar!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="row pb-3" id="timeline-row">
+
+            <div class="history-modals">
+
+                <div class="modal fade" id="modal-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Discovering New york harbour</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>An Italian, Giovanni da Verrazano, discovered New York Harbor.</p> 
+                                    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal-2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Central Park Opens</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Manhattan’s Central Park, now the most visited urban park in America, was first conceived in the mid 1800s as a place where both rich and poor might escape the congested, dirty streets and smoky air of dense downtown. Based in part of existing green spaces like Brooklyn’s Greenwood cemetery, Central Park was designed by a team of architects and engineers led by Frederick Law Olmstead and Calvert Vaux. The ambitious open space dominates the center of Manhattan Island, breaking the iconic street grid from 5th Avenue in the east to 8th Avenue in the West, and 59th Street in the south to 110th Street in the north. Part recreational space and part public health initiative, New York leaders saw Central Park as a place to help clear the “lungs of the city.” Construction of the park, though, required the forceful removal of a number of existing communities within its footprint, including the thriving African-American neighborhood of Seneca Village. </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal-3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">New York City was rocked by draft riots.</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>During the Civil War the Federal Government turned to conscription to fill the ranks of the Union Armies fighting in the south. Residents throughout the northern states were required to sign up for the draft, furnish a substitute, or pay a fee of $300 in lieu of serving. In several large northern cities, large portions of the lower classes–especially recent immigrants and Irish–resisted the idea of sacrificing themselves to fight an increasingly deadly war for what they saw as unworthy goals: for wealthy men to get even richer in the south, or to liberate enslaved Africans. In New York, draft resisters went on a three-day rampage, destroying draft offices, burning buildings, and killing as many as 119 people–many of them Black New Yorkers. City leaders, increasingly concerned about the instability threatened by the seething working classes, called in the Union Army to quell the violence.</p>                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">The First “El” Opened</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>The first of New York’s four elevated railroads opened — the Ninth Avenue Line.  The others were the Sixth Avenue Line, the Second Avenue Line and the Third Avenue Line, which was the last to close in 1955. </p>                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-12 text-center">
+                <h1 class="display-4 mb-3">New York's History</h1>
+
+            </div>
+
+            <div class="col-md-12 py-3 timeline">
+                <div class="container left">
+                    <div class="content">
+                        <!--TEXT GOES HERE-->
+                        <h2>1524</h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-1">Discovering New york harbour</a></h3>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <!--TEXT GOES HERE-->
+                        <h2>1858</h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-2">Central Park Opens</a></h3>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <!--TEXT GOES HERE-->
+                        <h2>1863</h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-3">New York City was rocked by draft riots</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <!--TEXT GOES HERE-->
+                        <h2>1870</h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-4">The First “El” Opened</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
